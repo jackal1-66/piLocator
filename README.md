@@ -7,3 +7,7 @@ Start it by running the command
 streamlit run app.py
 ```
 or by executing the piCalc.py script.
+
+# Requirements
+* `Python3`
+* `streamlit` library
