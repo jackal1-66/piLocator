@@ -33,14 +33,14 @@ def easyPi(val, pi_str):
         #now check if number is contained in Pi
     try:
         index = pi_str.index(val)
-        print("Found in pi with index: ", index)
+        return "Found in pi with index: "+str(index)
     except ValueError:
-        print("Not found in the first 1 billion and one digits of Pi.")
+        return "Not found in the first 1 billion and one digits of Pi."
 
 def main():
     number = input("Enter your number: ")
     pi_str = load_pi("piDigits/pi1e8_", 10)
-    easyPi(number, pi_str)
+    print(easyPi(number, pi_str))
     
 if __name__ == "__main__":
     main()
